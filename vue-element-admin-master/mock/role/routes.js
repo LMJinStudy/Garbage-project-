@@ -77,7 +77,7 @@ const asyncRoutes = [
     path: '/permission',
     component: 'layout/Layout',
     redirect: '/permission/index',
-    alwaysShow: true,
+    alwaysShow: false,
     meta: {
       title: 'Permission',
       icon: 'lock',
@@ -185,10 +185,10 @@ const asyncRoutes = [
         meta: { title: 'Count To' }
       },
       {
-        path: 'mixin',
-        component: 'views/components-demo/mixin',
-        name: 'ComponentMixinDemo',
-        meta: { title: 'componentMixin' }
+        // path: 'mixin',
+        // component: 'views/components-demo/mixin',
+        // name: 'ComponentMixinDemo',
+        // meta: { title: 'componentMixin' }
       },
       {
         path: 'back-to-top',

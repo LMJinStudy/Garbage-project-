@@ -1,7 +1,8 @@
 <template>
-  <div class="json-editor">
+ <center> <div class="json-editor">
     <textarea ref="textarea" />
   </div>
+ </center>
 </template>
 
 <script>

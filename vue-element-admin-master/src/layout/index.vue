@@ -25,11 +25,11 @@ export default {
   name: 'Layout',
   components: {
     AppMain,
-    Navbar,
-    RightPanel,
-    Settings,
-    Sidebar,
-    TagsView
+    // Navbar,
+    // RightPanel,
+    // Settings,
+    // Sidebar,
+    // TagsView
   },
   mixins: [ResizeMixin],
   computed: {
