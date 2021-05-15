@@ -1,10 +1,10 @@
 <template>
   <div class="dashboard-editor-container">
-    <!-- <github-corner class="github-corner" /> -->
+   <!-- <github-corner class="github-corner" />
 
-    <!-- <panel-group @handleSetLineChartData="handleSetLineChartData" /> -->
+    <panel-group @handleSetLineChartData="handleSetLineChartData" />
 
-    <!-- <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
+    <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <line-chart :chart-data="lineChartData" />
     </el-row> -->
 
@@ -26,17 +26,17 @@
       </el-col>
     </el-row> -->
 
-    <!-- <el-row :gutter="8">
-      <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 12}" :xl="{span: 12}" style="padding-right:8px;margin-bottom:30px;">
+    <el-row :gutter="8">
+      <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 24}" :xl="{span: 24}" style="padding-right:0px;margin-bottom:0px;">
         <transaction-table />
-      </el-col> -->
-      <!-- <center><el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 6}" :xl="{span: 6}" style="margin-bottom:30px;">
-        <todo-list />
-      </el-col></center> -->
+      </el-col>
       <!-- <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 6}" :xl="{span: 6}" style="margin-bottom:30px;">
+        <todo-list />
+      </el-col>
+      <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 6}" :xl="{span: 6}" style="margin-bottom:30px;">
         <box-card />
       </el-col> -->
-    <!-- </el-row> -->
+    </el-row>
   </div>
 </template>
 
@@ -50,7 +50,6 @@ import BarChart from './components/BarChart'
 import TransactionTable from './components/TransactionTable'
 import TodoList from './components/TodoList'
 import BoxCard from './components/BoxCard'
-
 const lineChartData = {
   newVisitis: {
     expectedData: [100, 120, 161, 134, 105, 160, 165],
@@ -69,7 +68,6 @@ const lineChartData = {
     actualData: [120, 82, 91, 154, 162, 140, 130]
   }
 }
-
 export default {
   name: 'DashboardAdmin',
   components: {
@@ -101,24 +99,21 @@ export default {
   padding: 0px;
   background-color: rgb(240, 242, 245);
   position: relative;
-
   .github-corner {
     position: absolute;
     top: 0px;
     border: 0;
     right: 0;
   }
-
   .chart-wrapper {
     background: #fff;
-    padding: 16px 16px 0;
-    margin-bottom: 32px;
+    padding: 0px 0px 0;
+    margin-bottom: 0px;
   }
 }
-
 @media (max-width:1024px) {
   .chart-wrapper {
-    padding: 8px;
+    padding: 0px;
   }
 }
 </style>
